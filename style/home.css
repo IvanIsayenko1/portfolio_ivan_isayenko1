@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    /* background-color: #ddecf3; */
+    background-image: linear-gradient(160deg, #ddecf3 0%, #80D0C7 100%);
+
+
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    display: grid;
+    grid-template-areas:
+        "header "
+        "me"
+        "about-me"
+        "studies"
+        "experience"
+        "habilities";
+}
+
+.header {
+    grid-area: header;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    background-color: #ddecf3;
+    background-image: linear-gradient(160deg, #ddecf3 0%, #80D0C7 100%);
+
+
+}
+
+.me {
+    grid-area: me;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        ". photo"
+        "name photo"
+        "contact-mail photo"
+        "contact-tel photo"
+        ". photo"
+    ;
+}
+
+.about-me {
+    grid-area: about-me;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.habilities {
+    grid-area: habilities;
+}
+
+.studies {
+    grid-area: studies;
+}
+
+.contactar {
+    float: right;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.idioma {
+    float: right;
+    font-weight: bold;
+    padding-right: 20px;
+    opacity: 0.6;
+}
+
+.idioma:hover,
+.contactar:hover {
+    cursor: pointer;
+    opacity: 1
+}
+
+.nav-opt {
+    float: left;
+    margin-right: 30px;
+    transition: 200ms;
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+.nav-opt:hover {
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1
+}
+
+.name {
+    font-size: 70px;
+    grid-area: name;
+}
+
+.photo {
+    grid-area: photo;
+    width: 510px;
+    margin: 10px;
+}
+
+.part {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.part-tittle {
+    font-size: 250%;
+    font-weight: bold;
+    width: 100%;
+}
+
+.study-center {
+    font-size: 23px;
+    float: left;
+    width: 100%;
+}
+
+.study-tittle {
+    opacity: 0.8;
+    width: 100%;
+    float: left;
+}
+
+.contact-mail {
+    grid-area: contact-mail;
+    color: darkslategray !important;
+    text-decoration: none !important;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.contact-tel {
+    grid-area: contact-tel;
+    color: darkslategray !important;
+    text-decoration: none !important;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.lenguages {
+    display: grid;
+    grid-template: "lenguage-es lenguage-ca lenguage-uk lenguage-ua lenguage-ru";
+}
+
+.lenguage {
+    display: grid;
+    grid-template: "lenguage-flag"
+        "lenguage-tittle"
+        "lenguage-level";
+    text-align: center;
+    padding: 10px;
+    border: 1px grey solid;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.lenguage-flag {
+    grid-area: lenguage-flag;
+    width: 50px;
+    margin: auto;
+}
+
+.lenguage-tittle {
+    grid-area: lenguage-tittle;
+    font-size: 20px;
+}
+
+.lenguage-level {
+    grid-area: lenguage-level;
+    opacity: 0.8;
+}
+
+
+/* EXPERIENCE */
+.experience-be {
+    grid-area: experience-be;
+    display: grid;
+    grid-template: "be-tittle . ."
+        "be-java be-sql be-mongo";
+}
+
+.experience-tittle {
+    font-size: 30px;
+}
+
+.experience-skill,
+.experience-date,
+.experience-location {
+    opacity: 0.8;
+
+}
+
+.experience {
+    text-align: center;
+    padding: 10px;
+    border: 1px grey solid;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.be-tittle {
+    font-size: 20px;
+    grid-area: be-tittle;
+}
+
+.be-java {
+    grid-area: be-java;
+}
+
+.be-sql {
+    grid-area: be-sql;
+}
+
+.be-mongo {
+    grid-area: be-mongo;
+}
+
+.experience-fe {
+    display: grid;
+    grid-template:
+        "fe-tittle . . ."
+        "js jquery angular ts";
+}
+
+.fe-tittle {
+    font-size: 20px;
+    grid-area: fe-tittle;
+}
+
+.fe-js {
+    grid-area: js;
+}
+
+.fe-angular {
+    grid-area: angular;
+}
+
+.fe-jquery {
+    grid-area: jquery;
+}
+
+.fe-ts {
+    grid-area: ts;
+}
+
+.experience-work {
+    /* display: grid;
+    grid-template: "work-tittle ."
+        "t-systems wallner"; */
+}
+
+.work-tittle {
+    font-size: 20px;
+    grid-area: work-tittle;
+}
+
+.work-t-systems {
+    grid-area: t-systems;
+}
+
+.work-wallner {
+
+    grid-area: wallner
+}
+
+.experience-tecnologies {
+    display: grid;
+    grid-template: "experience-be""frontend";
+}
+
+.experience-tecnology{
+    display: grid;
+    grid-template: "be bbdd fe";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.back{
+    grid-area: be;
+}
+
+.bbdd{
+    grid-area: bbdd;
+}
+
+.front{
+    grid-area: fe;
+}
